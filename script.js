@@ -23,6 +23,7 @@ function insertCell(sum){
 	let row=document.createElement('tr');
 	let cell=document.createElement('td');
 	cell.colspan=2;
+	cell.id='ans';
 	cell.innerText=`table: ${sum}`;
 	row.appendChild(cell);
 	table.appendChild(row);
