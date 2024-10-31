@@ -23,14 +23,14 @@ function insertCell(sum){
 	let row=document.createElement('tr');
 	let cell=document.createElement('td');
 	cell.colspan=2;
-	cell.innerText='table: ${sum}';
-	table.appendChild(row);
+	cell.innerText=`table: ${sum}`;
 	row.appendChild(cell);
+	table.appendChild(row);
 	
 }
 
 const getSum = () => {
-const price=document.querySelectorAll('.price');
+let price=document.querySelectorAll('.price');
 	price=Array.from(price);
 	let sum=price.reduce((total,price)=>
 	total+Number(price.innerText),0);
